@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0; 
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+}
+body{
+  background-image: url(https://img.helpnetsecurity.com/wp-content/uploads/2020/03/23143409/netflix-collection.jpg);
+}
+h2{
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.container{
+  
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container .box-container{
+  max-width: 1200px;
+  margin:0 auto;
+  padding:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+}
+
+.container .box-container .box{
+  /*background: #fff;*/
+  background: rgba(238, 24, 60, 0.253);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+  border-radius: 25px;
+}
+/*
+.container .box-container .box:nth-child(2){
+  border:2px solid #000;
+}
+*/
+.container .box-container .box:nth-child(2) .btn{
+  /*background: #444;*/
+  background: rgba(146, 144, 144, 0.413);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+}
+
+.container .box-container .box:nth-child(2) .btn:hover{
+  background: crimson;
+}
+
+.container .box-container .box h3{
+  font-size: 25px;
+  padding:17px 0;
+  color:#fff;
+}
+
+.container .box-container .box .price{
+  color:#fff;
+  /*background: crimson;*/
+  background: rgba(238, 24, 60, 0.453);
+  backdrop-filter: blur(2px);
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.container .box-container .box .price.year{
+  display: none;
+}
+
+.container .box-container .box .list{
+  margin:20px 0;
+}
+
+.container .box-container .box .list p{
+  padding:15px 0;
+  font-size: 17px;
+  color:#fff;
+}
+
+.container .box-container .box .list p i{
+  padding-right: 5px;
+  color:crimson;
+}
+
+.container .box-container .box .btn{
+  margin:20px;
+  display: block;
+  font-size: 17px;
+  /*background: #444;*/
+  background: rgba(146, 144, 144, 0.413);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+  color:#fff;
+  padding:10px;
+}
+
+.container .box-container .box .btn:hover{
+  background: crimson;
+}
+
+.container .price-toggler{
+  margin-top: 20px;
+  display: inline-block;
+  padding:5px;
+  height: 58px;
+  border-radius: 25px;
+  background: none;
+  /*backdrop-filter: blur(2px);*/
+  border: 2px solid #fff;
+}
+
+.container .price-toggler span{
+  padding:7px 30px;
+  cursor: pointer;
+  color:rgb(238, 24, 60);
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.container .price-toggler span.active{
+  background: rgb(238, 24, 60);
+  font-weight: bold;
+  color:#fff;
+}
+
+@media (max-width:450px){
+  .container .box-container{
+    grid-template-columns: 1fr;
+  }
+}
